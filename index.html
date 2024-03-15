@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask App</title>
+    <!-- Add your styles here -->
+    <style>
+        body{
+           background-color: aqua; 
+        }
+        #lmn{
+            background-color: aquamarine;
+            text-align: center;
+        }
+        #abc{
+            background-color:blueviolet;
+            text-align: center;
+        }
+        #video_id{
+            margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+
+        }
+
+        #pqr{
+           
+  position: relative;
+  border: 3px solid green;
+
+            width: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="abc">SENTIMENT ANALYSIS WEBSITE</h1>
+    <form action="/analyze" method="post">
+        <span> 
+            <label  id="lmn" for="video_id">ENTER VIDEO ID    :</label>
+        </span>
+           
+        <span>
+            <input type="text" id="video_id" name="video_id" required>
+        </span>
+
+       
+        <br>
+        <BR></BR>
+        <button id="pqr" type="submit">Analyze</button>
+    </form>
+</body>
+</html>
+
