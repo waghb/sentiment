@@ -20,7 +20,7 @@ api_key = None
 def index():
     return render_template('index.html')
 
-@app.route('/analyze', methods=['GET'])
+@app.route('/analyze', methods=['POST'])
 def analyze():
     global api_key
     try:
